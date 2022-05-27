@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CS425_P1</title>
+    <meta charset="utf-8" />
+    <script src="CS425_P1.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <form name="testform" id="testform">
+      <fieldset>
+        <legend>Currency Conversion Calculator</legend>
+        <p>Exchange Rate Date: <span id="rate_date"></span></p>
+        <p>Convert to: <span id="convert_to"></span></p>
+        <label for="value">Value (in USD)</label>
+        <input type="number" name="value" id="value" />
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date" />
+        <input type="button" value="Convert" onclick="CS425_P1.onClick();" />
+      </fieldset>
+    </form>
+    <div id="output"></div>
+    <script>
+      CS425_P1.getCurrencies();
+    </script>
+  </body>
+</html>
+
